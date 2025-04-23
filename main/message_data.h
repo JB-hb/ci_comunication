@@ -24,8 +24,8 @@ typedef enum observ {
 
 typedef struct P_Data_t {
 	estado_social estatus;
-	gender genero
-} P_Data_T;
+	gender genero;
+} P_Data_t;
 
 typedef enum observ_r {
 	no_tercera,
@@ -43,13 +43,13 @@ typedef struct Solicitud_t {
 	P_Data_t data;
 	uint8_t senderIP;
 	sol_type type;
-	observ observations
-} Solicitud_t
+	observ observations;
+} Solicitud_t;
 
 typedef struct Respuesta_t {
 	uint32_t CI;
 	uint8_t destIP;
-	observ_r observations
-} Respuesta_t
+	observ_r observations;
+} Respuesta_t;
 
 #endif

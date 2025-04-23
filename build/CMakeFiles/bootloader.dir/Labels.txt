@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/noctis/Progra/ci_comunication/build/CMakeFiles/bootloader
+/home/noctis/Progra/ci_comunication/build/CMakeFiles/bootloader.rule
+/home/noctis/Progra/ci_comunication/build/CMakeFiles/bootloader-complete.rule
+/home/noctis/Progra/ci_comunication/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/noctis/Progra/ci_comunication/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/noctis/Progra/ci_comunication/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/noctis/Progra/ci_comunication/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/noctis/Progra/ci_comunication/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/noctis/Progra/ci_comunication/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/noctis/Progra/ci_comunication/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
