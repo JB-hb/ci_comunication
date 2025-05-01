@@ -18,7 +18,7 @@ void func(void);
 typedef struct cons_node {
 	uint16_t CI;
 	cons_node* next;
-} cons_node;
+} cons_node_t;
 
 typedef struct cons_list {
 	cons_node* head;
@@ -44,18 +44,14 @@ typedef struct resp_node_args_t{
 	cons_node* cnode;
 }resp_node_args_t;
 
-int res_get_length(resp_list_args_t* args,  resp_node_args_t* node){
-	if (args->respose == NULL){
-		cons_list* list = args->consults;
-	}else{
-		resp_list* list = args->response;
-	}
+int res_get_length(resp_node* node, cont);
 
-	if(list->head->next == NULL){
-		return 0
-	}
+int cons_get_length(resp_node* node, cont);
 
+int res_list_is_empty(resp_list* list);
 
-};
+int cons_list_is_empty(cons_list* list);
+
+res_node* res_get_min(res_list* list, res_node* node, res_node* min, int min_cont);
 
 #endif

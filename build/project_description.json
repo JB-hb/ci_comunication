@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "ci_comunication",
-    "project_version":    "670a076",
+    "project_version":    "27fc04d-dirty",
     "project_path":       "/home/noctis/Progra/ci_comunication",
     "idf_path":           "/home/noctis/esp/esp-idf",
     "build_dir":          "/home/noctis/Progra/ci_comunication/build",
