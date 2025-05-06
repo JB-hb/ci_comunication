@@ -13,8 +13,6 @@
 #define CREATE_RLIST_ARGS(resp, cons) ({resp_list_args_t x = {.response = resp, .consults = cons}}; x)
 #define CREATE_RNODE_ARGS(resp, cons) ({resp_node_args_t x = {.rnode = resp, .cnode = cons}}; x)
 
-void func(void);
-
 typedef struct cons_node {
 	uint16_t CI;
 	cons_node* next;
@@ -53,5 +51,7 @@ int res_list_is_empty(resp_list* list);
 int cons_list_is_empty(cons_list* list);
 
 res_node* res_get_min(res_list* list, res_node* node, res_node* min, int min_cont);
+
+void cons_insert(cons_list* list, cons_node* node);
 
 #endif

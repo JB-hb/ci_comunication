@@ -75,3 +75,12 @@ res_node* res_get_min(res_list* list, res_node* node, res_node* min, int min_con
 	return res_get_min(list, node->next, min, min_cont);	
 
 }
+
+uint8_t resp_dist_con(res_list* list, con_node* con){
+
+	res_node* res_dev = res_get_min(list, NULL, NULL, 0);
+
+	cons_insert(res_dev->consults, con);
+
+	return res_dev->addr;
+}
