@@ -18,10 +18,6 @@ typedef enum sol_type {
 	Normal
 } sol_type;
 
-typedef enum observ {
-	Cita_AM
-} observ;
-
 typedef struct P_Data_t {
 	estado_social estatus;
 	gender genero;
@@ -41,15 +37,19 @@ typedef enum observ_r {
 typedef struct Solicitud_t {
 	uint32_t CI;
 	P_Data_t data;
-	uint8_t senderIP;
+	uint8_t senderIP[6];
 	sol_type type;
-	observ observations;
 } Solicitud_t;
 
 typedef struct Respuesta_t {
 	uint32_t CI;
-	uint8_t destIP;
+	uint8_t destIP[6];
 	observ_r observations;
 } Respuesta_t;
+
+typedef struct Base_Message_t {
+	type_message type;
+	uint8_t message[24];
+} Base_Message_t;
 
 #endif
